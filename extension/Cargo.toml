@@ -1,0 +1,17 @@
+[package]
+name = "nativephp-crypt"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ext-php-rs = "*"
+magic-crypt = "*"
+
+[profile.release]
+strip = "debuginfo"
+
+[env]
+NATIVEPHP_CRYPT_KEY = "cg7riX2WZ/gmIsdAy/fcOcPq0uqC2Oulp0VAg5k5hzAfw6tWcado9egq7BJHWnO8"
